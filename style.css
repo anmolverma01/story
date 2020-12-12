@@ -154,7 +154,7 @@ select option{
 	{
 		color:#3333ff;
 	}
-#new,#old
+#new, a #old
 	{
 		border:none;
 		color:white;
@@ -167,6 +167,7 @@ select option{
 		cursor: pointer;
 		padding:2px;
 		margin:5px;
+		text-decoration:none;
 	}
 #new:hover,#old:hover
 	{
