@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Story</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<header class="allhead">
+	<div align="center"><img src="logobook.png" width="auto" height="80px"></div>
+	<div align="center" id="storyHead">Make-Story</div>
+	<div align="center" id="storyAreaHead">Fill your dream characters</div>
+</header>
+<main>
+<div id="storyHere" align="center"></div>
+<div id="storyArea" align="center">
+
+	<form id="allinput" action="">
+		<br><div class="feilds">Animal: </div>
+		<input id="in1"type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please Fill'" placeholder="Your Favourite Animal">
+		<br><div class="feilds">Another Animal: </div>
+		<input id="in2" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please Fill'" placeholder="Your Another Favourite Animal">
+		<br><div class="feilds">One More Animal: </div>
+		<input id="in3" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please Fill'" placeholder="One more Animal">
+		<br><div class="feilds">Adjective (past tense): </div>
+		<input id="in12" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please Fill'" placeholder="adjective in past tense">
+		<br><div class="feilds">Verb (ends-in-ing): </div>
+		<input id="in4" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please Fill'" placeholder="ing form of verb">
+		<br><div class="feilds">Number: </div>
+		<input id="in5" type="number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please Fill'" placeholder="Put any desired no.">
+		<br><div class="feilds">Yes or No: </div>
+		<div class="fradio"><input type="radio" id="in6" name="YesNo" value="0"><label for="yes">Yes</label><input type="radio" id="in7" name="YesNo" value="1"><label for="No">No</label></div>
+		<br><div class="feilds">Relative speed: </div><select id="in8"><option class="in9">Quicker</option><option class="in9">Slower</option></select>
+		<br><div class="feilds">Motivational Quote:</div><input id="in10" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please Fill'" placeholder="Example">
+		<br><div align="center"><div align="center" class="feilds">Meaningful Message: </div><br><textarea id="in11" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please Fill'" placeholder="This is meaningful area"></textarea></div>
+
+	</form>
+<div class="buttonbox" align="center"><button onclick="createStory()" id="formStoryButton">Form Your Story</button></div>
+	<h4 class="foot">&copy; All rights reserved with <font color="black">DESIGN PVT. LTD.</font></h4>
+</div>
+		
+<div id="storyscript" align="center" style="display:none;">
+	<h3 id="scripthead">The <u><b><span id="in1a" class="in1class">Rabbit</span></b></u> And The <u><b><span id="in2a" class="in2class">Tortoise</span></b></u></h3>
+	<div id="scriptcontent">
+	<p>A <u><b><span id="in1b" class="in1class">Rabbit</span></b></u> was making fun of the <u><b><span id="in2b" class="in2class">Tortoise</span></b></u> one day for being so slow.</p>
+	<p>"Do you ever get anywhere?" he asked with a mocking laugh.</p>
+	<p>"<u><b><span id="in67">Yes</span></b></u>," replied the <u><b><span id="in2c" class="in2class">Tortoise</span></b></u>, "but I get there <u><b><span id="in89">Quicker</span></b></u> than you think. I'll run you a race and prove it."</p>
+	<p>The <u><b><span id="in1c" class="in1class">Rabbit</span></b></u> was much <u><b><span id="in12a">alarmed</span></b></u> at the idea of running a race with the <u><b><span id="in2i" class="in2class">Tortoise</span></b></u>, but for the fun of the thing he agreed. So the <u><b><span id="in3a">Bear</span></b></u>, who had consented to act as judge, marked the distance yelled, "<u><b><span id="in10a">On your marks, go</span></b></u>".</p>
+	<p>The <u><b><span id="in1d" class="in1class">Rabbit</span></b></u> was soon far out of sight, and to make the <u><b><span id="in2d" class="in2class">Tortoise</span></b></u> feel very deeply how ridiculous it was for him to try a race with a <u><b><span id="in1e" class="in1class">Rabbit</span></b></u>, he went off the course to practice <u><b><span id="in4a">Sleeping</span></b></u> for <u><b><span id="in5a">2</span></b></u> hours until the <u><b><span id="in2e" class="in2class">Tortoise</span></b></u> should catch up.</p>
+	<p>The <u><b><span id="in2f" class="in2class">Tortoise</span></b></u> meanwhile kept going slowly but steadily, and after a time, passed the place where the <u><b><span id="in1f" class="in1class">Rabbit</span></b></u> was <u><b><span id="in4b">Sleeping</span></b></u>. The <u><b><span id="in1g" class="in1class">Rabbit</span></b></u> was so caught up in <u><b><span id="in4c">Sleeping</span></b></u>: and when at last he did stop, the <u><b><span id="in2g" class="in2class">Tortoise</span></b></u> was near the goal. The <u><b><span id="in1h" class="in1class">Rabbit</span></b></u> now ran his swiftest, but he could not overtake the <u><b><span id="in2h" class="in2class">Tortoise</span></b></u> in time.</p>
+	<h4 id="scriptmoral">Moral of the Story</h4>
+	<p><i>"<u><b><span id="in11a">Near judge someone with their outer look and keep on doing your jobs in small bites.</span></b></u>"</i></p>
+	<button onclick="newStory()" id="new">Make Corrections</button>
+	<button onclick="oriStory()" id="old">Original Story</button>
+	</div>
+</div>
+</main>
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>
